@@ -11,7 +11,7 @@
     "battery": "42h case / 8h buds",
     "weight": "4.6g per bud",
     "latency": "35ms low-latency mode",
-    "image": "assets/images/hero earpods.jpg",
+    "image": "assets/images/hero-earpods.jpg",
     "accent": "#7ad5ff"
   },
   {
@@ -56,7 +56,7 @@
     "battery": "58h continuous",
     "weight": "262g",
     "latency": "27ms wired / 48ms BT",
-    "image": "assets/images/headphone on laptop.jpg",
+    "image": "assets/images/headphone-on-laptop.jpg",
     "accent": "#ff9f7d"
   },
   {
@@ -71,7 +71,7 @@
     "battery": "52h continuous",
     "weight": "249g",
     "latency": "32ms low-latency",
-    "image": "assets/images/headphone model.jpg",
+    "image": "assets/images/headphone-model.jpg",
     "accent": "#ffd479"
   },
   {
@@ -101,7 +101,7 @@
     "battery": "46h continuous",
     "weight": "242g",
     "latency": "38ms BT",
-    "image": "assets/images/headphone black.jpg",
+    "image": "assets/images/headphone-black.jpg",
     "accent": "#6bd8ff"
   },
   {
@@ -176,7 +176,7 @@
     "battery": "55h continuous",
     "weight": "246g",
     "latency": "30ms BT",
-    "image": "assets/images/earphone black.jpg",
+    "image": "assets/images/earphone-black.jpg",
     "accent": "#b8e5ff"
   }
 ]
