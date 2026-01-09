@@ -9,10 +9,6 @@ function getData() {
         const productList = document.getElementById("productList");
         card.className = "product"; // <== memberikan class pada div
         card.style.backgroundImage = `url(${item.image})`;
-        card.style.backgroundPosition = "center";
-        card.style.backgroundSize = "cover";
-        card.style.backgroundRepeat = "no-repeat";
-        card.style.minHeight = "100vh";
         card.innerHTML = `
         <h1>${item.title}</h1>
         <p>${item.description}</p>
