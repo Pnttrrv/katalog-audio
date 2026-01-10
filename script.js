@@ -7,6 +7,7 @@ function getData() {
         // <== mengulang memecah data items yang banyak menjadi item masing-masing
         const card = document.createElement("div"); //membuat element div
         const productList = document.getElementById("productList");
+        const href = `detail.html?id=${encodeURIComponent(item.id)}`;
         card.className = "product"; // <== memberikan class pada div
         card.style.backgroundImage = `url(${item.image})`; //<== menambahkan background image
         console.log(item);
@@ -37,6 +38,12 @@ function getData() {
         </div>
         `; // <== memberikan isi pada div dengan class product
 
+        const content = card.querySelector(".product-details");
+        if (content) {
+          content.onclick = () => {
+            window.location.href = href;
+          };
+        }
         productList.appendChild(card); // <== mengirim isian yang ditambahkan dengan innerHTML ke index.html
       });
     });
