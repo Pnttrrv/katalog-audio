@@ -10,7 +10,7 @@ function getData() {
         const href = `detail.html?id=${encodeURIComponent(item.id)}`;
         card.className = "product"; // <== memberikan class pada div
         card.style.backgroundImage = `url(${item.image})`; //<== menambahkan background image
-        console.log(item);
+        // console.log(item);
         card.innerHTML = `
         <div class="product-details">
           <h1>${item.title}</h1>
