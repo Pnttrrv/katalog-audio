@@ -21,30 +21,33 @@ function getDetail() {
       detailProduct.innerHTML = `
       <div class="detail-card">
         
-        <div class="detail-body" style="background-image: url(${item.image})">
-          <a href="index.html" class="btnBack">&#8592; Kembali</a>
-          <h1>${item.title}</h1>
-          <p>${item.subtitle}</p>
-          <div id="detailBody">
+      <div class="detail-body" style="background-image: url(${item.image})">
+      <a href="index.html" class="btnBack" >&#8592; Kembali</a>
+        <div class="detail-body-container">
           
-          </div>
+            <h1>${item.title}</h1>
+            <p>${item.subtitle}</p>
+            <div id="detailBody">
+            
+            </div>
 
-          <div class="detailStat">
-            <div class="product-detail">
-              <span class="label">Color</span>
-              <span class="value">${item.color}</span>
-            </div>
-            <div class="product-detail">
-              <span class="label">Battery</span>
-              <span class="value">${item.battery}</span>
-            </div>
-            <div class="product-detail">
-              <span class="label">Weight</span>
-              <span class="value">${item.weight}</span>
-            </div>
-            <div class="product-detail">
-              <span class="label">Latency</span>
-              <span class="value">${item.latency}</span>
+            <div class="detailStat">
+              <div class="product-detail">
+                <span class="label">Color</span>
+                <span class="value">${item.color}</span>
+              </div>
+              <div class="product-detail">
+                <span class="label">Battery</span>
+                <span class="value">${item.battery}</span>
+              </div>
+              <div class="product-detail">
+                <span class="label">Weight</span>
+                <span class="value">${item.weight}</span>
+              </div>
+              <div class="product-detail">
+                <span class="label">Latency</span>
+                <span class="value">${item.latency}</span>
+              </div>
             </div>
           </div>
 

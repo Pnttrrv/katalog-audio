@@ -35,25 +35,49 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.detail-body-container {
+  display: grid;
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  right: 25px;
+  background-color: rgba(18, 18, 18, 0.6);
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .detail-body p {
   color: white;
+  line-height: 1.8rem;
 }
 
 .detailStat {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 7px;
+  margin-top: 15px;
 }
 
 .btnBack {
   display: inline-flex;
   gap: 6px;
+  padding: 5px;
   text-decoration: none;
   color: white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 10px;
 }
 
+.btnBack:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: orangered;
+  transition: all 0.3s ease-in-out;
+}
 .product-detail {
   background-color: rgba(18, 18, 18, 0.5);
 }
