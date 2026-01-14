@@ -3,6 +3,7 @@ function getData() {
     .then((response) => response.json())
     .then((items) => {
       // <==memecah data yang ada di data.json
+      const cards = [];
       items.forEach((item) => {
         // <== mengulang memecah data items yang banyak menjadi item masing-masing
         const card = document.createElement("div"); //membuat element div
@@ -45,7 +46,25 @@ function getData() {
           };
         }
         productList.appendChild(card); // <== mengirim isian yang ditambahkan dengan innerHTML ke index.html
+
+        cards.push(card);
       });
+      console.log(cards);
+
+      function reveal() {
+        for (const card of cards) {
+          const { top, bottom } = card.getBoundingClientRect();
+          if (
+            top < window.innerHeight * 0.85 &&
+            bottom > window.innerHeight * 0.15
+          ) {
+            card.classList.add("show");
+          }
+        }
+      }
+      reveal();
+      window.addEventListener("scroll", reveal, { passive: true });
+      window.addEventListener("resize", reveal);
     });
 
   console.log("Test data dari script");

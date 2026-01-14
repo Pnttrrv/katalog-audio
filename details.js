@@ -23,40 +23,37 @@ function getDetail() {
         
       <div class="detail-body" style="background-image: url(${item.image})">
       <a href="index.html" class="btnBack" >&#8592; Kembali</a>
-        <div class="detail-body-container">
+      <div class="detail-body-container">
           
-            <h1>${item.title}</h1>
-            <p>${item.subtitle}</p>
-            <div id="detailBody">
-            
+          <h1>${item.title}</h1>
+          <p>${item.subtitle}</p>
+          <div id="detailBody">
+          </div>
+          <div class="detailStat">
+            <div class="product-detail">
+              <span class="label">Color</span>
+              <span class="value">${item.color}</span>
             </div>
-
-            <div class="detailStat">
-              <div class="product-detail">
-                <span class="label">Color</span>
-                <span class="value">${item.color}</span>
-              </div>
-              <div class="product-detail">
-                <span class="label">Battery</span>
-                <span class="value">${item.battery}</span>
-              </div>
-              <div class="product-detail">
-                <span class="label">Weight</span>
-                <span class="value">${item.weight}</span>
-              </div>
-              <div class="product-detail">
-                <span class="label">Latency</span>
-                <span class="value">${item.latency}</span>
-              </div>
+            <div class="product-detail">
+              <span class="label">Battery</span>
+              <span class="value">${item.battery}</span>
+            </div>
+            <div class="product-detail">
+              <span class="label">Weight</span>
+              <span class="value">${item.weight}</span>
+            </div>
+            <div class="product-detail">
+              <span class="label">Latency</span>
+              <span class="value">${item.latency}</span>
             </div>
           </div>
-
         </div>
+      </div>
       </div>
       `;
 
       const detailBody = document.getElementById("detailBody");
-      const paragraphs = (item.detail_description || "").split(/\n+/);
+      const paragraphs = (item.detail_description || "").split(/\n+/); //memecah data dengan spli yang dipisahkan oleh /n
       paragraphs.forEach((text) => {
         const trimmed = text.trim();
         console.log(trimmed);

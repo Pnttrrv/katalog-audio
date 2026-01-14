@@ -41,6 +41,15 @@ body {
   justify-content: end;
   align-items: start;
   padding: 26px;
+
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.show {
+  opacity: 1;
 }
 
 .product-details {
